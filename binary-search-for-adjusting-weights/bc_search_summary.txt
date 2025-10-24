@@ -1,0 +1,9 @@
+Binary Search Summary: bc weight
+==================================================
+
+Total iterations: 5
+Search range: (0.0f0, 100.0f0)
+Fixed weights: (supervised = 1.0f0, pde = 1.0f0)
+
+Results by weight value:
+--------------------------------------------------

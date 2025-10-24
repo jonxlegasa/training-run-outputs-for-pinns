@@ -1,0 +1,24 @@
+Binary Search Training Run
+==================================================
+
+Iteration: 4 / 5
+Weight being searched: pde
+Weight value tested: 31.25
+
+Weight Configuration:
+  supervised_weight: 1.0
+  bc_weight: 1.0
+  pde_weight: 31.25
+
+Fixed Weights:
+  supervised: 1.0
+  bc: 1.0
+
+Other Settings:
+  num_supervised: 5
+  N: 5
+  x_left: 0.0
+  x_right: 1.0
+  Search range: [25.0, 37.5]
+
+Timestamp: 2025-10-23T18:49:24.317
