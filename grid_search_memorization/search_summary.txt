@@ -1,0 +1,19 @@
+Grid Search Summary
+==================================================
+
+Search Parameters:
+  Weight 1: pde
+  Weight 2: bc
+  Grid points: 10 x 10
+
+Best Configuration Found:
+  supervised: 1.0
+  bc: 0.1
+  pde: 0.1
+  Objective value: 0.6724998900065973
+
+Statistics:
+  Min objective: 0.6724998900065973
+  Max objective: 12.671853380132356
+  Mean objective: 7.869214451884082
+  Std objective: 3.622097691971671
