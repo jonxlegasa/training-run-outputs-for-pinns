@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "dataset_id": "49b568d11d246a31a3aa3c0e5504d816a2fefc8f6de264254369a16cfa9bb47d",
+  "materialization": "deterministic streaming by canonical index",
+  "seed": "30001",
+  "size": 1000000,
+  "power_series_degree": 20,
+  "regions": [
+    "saddle",
+    "stable_node",
+    "unstable_node",
+    "stable_spiral",
+    "unstable_spiral",
+    "center"
+  ]
+}

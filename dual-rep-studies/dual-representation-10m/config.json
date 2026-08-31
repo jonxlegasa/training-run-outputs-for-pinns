@@ -1,0 +1,76 @@
+{
+  "representations": [
+    "power_series",
+    "eigenvalue"
+  ],
+  "created_at": "2026-08-30T12:57:27Z",
+  "splits": {
+    "test": {
+      "name": "test",
+      "dataset_id": "49b568d11d246a31a3aa3c0e5504d816a2fefc8f6de264254369a16cfa9bb47d",
+      "materialization": "deterministic streaming by canonical index",
+      "seed": "30001",
+      "size": 1000000,
+      "power_series_degree": 20,
+      "regions": [
+        "saddle",
+        "stable_node",
+        "unstable_node",
+        "stable_spiral",
+        "unstable_spiral",
+        "center"
+      ]
+    },
+    "validation": {
+      "name": "validation",
+      "dataset_id": "f23e74e37cb62abffdfe357430b03131458372917d92a841d5bb3ae13357dc64",
+      "materialization": "deterministic streaming by canonical index",
+      "seed": "20001",
+      "size": 500000,
+      "power_series_degree": 20,
+      "regions": [
+        "saddle",
+        "stable_node",
+        "unstable_node",
+        "stable_spiral",
+        "unstable_spiral",
+        "center"
+      ]
+    },
+    "train": {
+      "name": "train",
+      "dataset_id": "dd0cc9f79584ca627ef80e5339d6c6c48d024bc1c6235a23c61b53de232e9a42",
+      "materialization": "deterministic streaming by canonical index",
+      "seed": "10001",
+      "size": 10000000,
+      "power_series_degree": 20,
+      "regions": [
+        "saddle",
+        "stable_node",
+        "unstable_node",
+        "stable_spiral",
+        "unstable_spiral",
+        "center"
+      ]
+    }
+  },
+  "test_policy": "The final test split is not used for training, checkpoint selection, or hyperparameter selection.",
+  "output_root": "results/dual-representation-10m",
+  "experimental_control": "Both representations use identical canonical ODE indices, split seeds, epoch permutations, and minibatches.",
+  "study": "dual-representation",
+  "training": {
+    "global_optimizer_updates": 122100,
+    "optimizer": "Adam",
+    "batch_size": 8192,
+    "network_hidden_width": 64,
+    "model_seed": 1234,
+    "family_models": true,
+    "global_batches_per_epoch": 1221,
+    "learning_rate": 0.001,
+    "power_series_degree": 20,
+    "global_models": true,
+    "epochs": 100,
+    "checkpoint_every_epochs": 5,
+    "collocation_points": 50
+  }
+}

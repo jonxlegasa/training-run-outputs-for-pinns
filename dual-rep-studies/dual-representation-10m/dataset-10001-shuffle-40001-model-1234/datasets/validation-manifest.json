@@ -1,0 +1,17 @@
+{
+  "name": "validation",
+  "dataset_id": "f23e74e37cb62abffdfe357430b03131458372917d92a841d5bb3ae13357dc64",
+  "materialization": "deterministic streaming by canonical index",
+  "shuffle_seed": "50001",
+  "seed": "20001",
+  "size": 500000,
+  "power_series_degree": 20,
+  "regions": [
+    "saddle",
+    "stable_node",
+    "unstable_node",
+    "stable_spiral",
+    "unstable_spiral",
+    "center"
+  ]
+}

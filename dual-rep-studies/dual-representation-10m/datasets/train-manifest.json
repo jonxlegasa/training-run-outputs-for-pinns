@@ -1,0 +1,16 @@
+{
+  "name": "train",
+  "dataset_id": "dd0cc9f79584ca627ef80e5339d6c6c48d024bc1c6235a23c61b53de232e9a42",
+  "materialization": "deterministic streaming by canonical index",
+  "seed": "10001",
+  "size": 10000000,
+  "power_series_degree": 20,
+  "regions": [
+    "saddle",
+    "stable_node",
+    "unstable_node",
+    "stable_spiral",
+    "unstable_spiral",
+    "center"
+  ]
+}
